@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | DataGenie</title>
+  <link rel="stylesheet" href="Sign.css" />
+</head>
+<body>
+  <header class="hdr">
+    <div class="logo">DataGenie</div>
+    <nav class="nav">
+      <a href="\Login\Login.html" class="lnk">Login</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="signup-container">
+        <form action="/submit-your-form" method="post" class="signup-form">
+            <h2>Create an Account</h2>
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+            </div>
+
+            <div class="form-group captcha-group">
+                <label for="captcha">Captcha</label>
+                <img src="https://dummyimage.com/150x50/000/fff&text=xY2zP!" alt="Captcha Image">
+                <input type="text" id="captcha" name="captcha" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="form-footer">
+                <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+  </main>
+
+  <footer class="ftr">
+    <p class="ftr-txt">&copy; 2025 DataGenie. All rights reserved to DataGenie.</p>
+  </footer>
+
+</body>
+</html>
