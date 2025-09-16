@@ -3,26 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up | DataGenie</title>
-  <link rel="stylesheet" href="Sign.css" />
+  <title>Login | DataGenie</title>
+  <link rel="stylesheet" href="\static\css\Login.css" />
 </head>
 <body>
   <header class="hdr">
     <div class="logo">DataGenie</div>
     <nav class="nav">
-      <a href="\Login\Login.html" class="lnk">Login</a>
+      <a href="\templates\Sign.html" class="lnk">Sign Up</a>
     </nav>
   </header>
 
   <main class="main">
-    <div class="signup-container">
-        <form action="/submit-your-form" method="post" class="signup-form">
-            <h2>Create an Account</h2>
-
-            <div class="form-group">
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-            </div>
+    <div class="loginup-container">
+        <form action="/submit-your-form" method="post" class="loginup-form">
+            <h2>Login to Account</h2>
 
             <div class="form-group">
                 <label for="email">Email</label>
@@ -40,7 +35,7 @@
                 <input type="text" id="captcha" name="captcha" required>
             </div>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit">login Up</button>
 
             <div class="form-footer">
                 <a href="forgot-password.html">Forgot Password?</a>

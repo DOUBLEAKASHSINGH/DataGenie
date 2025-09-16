@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | DataGenie</title>
+  <link rel="stylesheet" href="\static\css\Dash.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="hdr">
+    <div class="logo">DataGenie</div>
+    <nav class="nav">
+      <a href="\templates\Dash.html" class="lnk">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard -->
+  <section class="dash">
+    <h1 class="dash-title">Your Dashboard</h1>
+    <p class="dash-txt">Manage datasets, search, and create new ones.</p>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search datasets or databases..." />
+    </div>
+
+    <!-- Public datasets -->
+    <div class="sec">
+      <h2 class="sec-title">Available Datasets</h2>
+      <ul id="publicList" class="list"></ul>
+    </div>
+
+    <!-- My databases -->
+    <div class="sec">
+      <h2 class="sec-title">My Databases</h2>
+      <ul id="myList" class="list"></ul>
+    </div>
+
+    <!-- Create button -->
+    <div class="btn-box">
+      <button class="btn" onclick="goToCreate()">+ Create / Upload</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="ftr">
+    <p class="ftr-txt">&copy; 2025 DataGenie. All rights reserved.</p>
+  </footer>
+
+  <script src="\static\js\Dash.js"></script>
+</body>
+</html>
